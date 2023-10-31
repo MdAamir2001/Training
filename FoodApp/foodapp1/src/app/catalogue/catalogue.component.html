@@ -1,0 +1,24 @@
+
+<div class="center-container">
+<p class="animated-text"  >Taste the absolute dishes made by the hands of Masterchef..</p>
+
+
+<!-- catalogue.component.html -->
+<body>
+
+<div class="food-catalogue">
+    <br><br>
+    <h1>Food Catalogue</h1>
+    <div class="food-list">
+      <div *ngFor="let food of foodItems" 
+           [class.selected]="selectedFood === food.id" 
+           (click)="handleFoodClick(food.id)" 
+           class="food-item">
+        <h2>{{ food.name }}</h2>
+        <p>${{ food.price }}</p>
+      </div>
+    </div>
+  </div>
+</body>
+  
+</div>

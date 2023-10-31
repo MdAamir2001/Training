@@ -1,0 +1,40 @@
+<p>contact-details works!</p>
+
+<b>Enter your contact details</b>
+
+<b>contact details</b>
+
+<b>Name</b> {{firstName}} &nbsp;&nbsp; {{lastName}} <br>
+
+<b>Age</b> {{age}}<br>
+
+<b>Email</b> {{email}}<br>
+
+<b>phoneNumber</b> {{phoneNumber}}
+
+<b>join status</b> &nbsp; <input type="checkbox"
+
+ [checked]="joinStatus"/><br>
+
+<b>Choose your location</b>
+
+<button [disabled]="joinStatus" [class]="styleClassName">Confirm</button>
+
+<select [value]="location">
+
+    <option value="Banglore">Banglore</option>
+
+    <option value="Madurai">Madurai</option>
+
+    <option value="Chennai">Chennai</option>
+
+    <option value="Hyderabad">Hyderabad</option>
+
+</select>
+<div class="divstyle">style attached using class binding</div>
+
+<b>firstName</b> <input type="text" [(ngModel)]="firstName"/><br>
+<b>lastName</b> <input type="text" [(ngModel)]="lastName"/><br>
+<b>age</b> <input type="number" [(ngModel)]="age"/><br>
+<input type="range"[(ngModel)]="age" width="250"/>
+<b>Welcome Mr</b>{{firstName}} &nbsp;&nbsp;{{lastName}}

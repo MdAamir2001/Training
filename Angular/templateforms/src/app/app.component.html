@@ -1,0 +1,27 @@
+<!-- <A template driven forms will be controlled by a built in directive called ngform..> -->
+<form #projectData="ngForm" (ngSubmit)="processData(projectData)">
+
+  Your Project Id: <input type="number" name="projectID" ngModel/><br>
+  Project Name: <input type="text" name="projectName" ngModel/><br>
+  Project Start Date: <input type="date" name="startDate" ngModel/><br>
+  Project End Date: <input type="date" name="endDate" ngModel/><br>
+
+  <input type="submit" value="Save" />
+ </form>
+ <b>Employees Details</b>
+ <table style="border-color: blueviolet; border:5px;border-style: groove; background-color: rgb(235, 128, 198); padding: 2px;">
+  <tr>
+    <td style="background-color: rgb(234, 135, 14);">Project ID</td>
+    <td style="background-color: rgb(234, 204, 12);">Project Name</td>
+    <td style="background-color: rgb(204, 234, 12);">Start Date</td>
+    <td style="background-color: rgb(221, 228, 12);">End Date</td>
+  </tr>
+  <tr *ngFor="let p of project_list">
+    <td style="background-color: teal;">{{p.projectID}}</td>
+    <td style="background-color: teal;">{{p.projectName}}</td>
+    <td style="background-color: teal;">{{p.startDate}}</td>
+    <td style="background-color: teal;">{{p.endDate}}</td>
+  </tr>
+
+ </table>
+<router-outlet></router-outlet>

@@ -1,0 +1,10 @@
+<b>Form Details</b><br><br>
+<form [formGroup]="frmGroup" (ngSubmit)="processData()">
+  First Name <input type="text" name="firstName" formControlName="firstName"/><br><br>
+  Last Name <input type="text" name="lastName" formControlName="lastName"/><br><br> 
+  Age <input type="number" name="age" formControlName="age"/><br><br>
+  Email <input type="email" name="email" formControlName="email"/><br><br>
+  <input type="checkbox"  [(ngModel)]="isCheckboxChecked" /> I accept The above details are true.
+  <input type="submit" value="save" [disabled]="!frmGroup.valid || isCheckboxChecked"/><br><br>   
+</form>
+<router-outlet></router-outlet>

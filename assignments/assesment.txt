@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Sales for the year</title>
+</head>
+<body><center>
+<h1>Sales for the year 2007</h1>
+<table border="10px dashed" width="500" height="500">
+<tr>
+<td colspan="2" rowspan="2">All sales in south east asia only</td>
+<td><img src="pc.jpg"/></td>
+</tr>
+<tr align="center"><td colspan="8" bgcolor="white" style="color:orange"><i><b>Sales for the year ended in December 31,2007</b></i></td></tr>
+
+<tr color="red" bgcolor="yellow">
+
+<tr align="center" bgcolor="white">
+<td rowspan="6" bgcolor="white">
+<font style="color:blue"><b>All products in warehouse</b></font>
+</td>
+
+<td rowspan="2" bgcolor="yellow" style="color:blue" ><b>Products</bs></td>
+<td colspan="6"style="color:purple"; "font-size:14"><b>Months</b></td>
+<tr>
+<td bgcolor="pink" width="50" align="center"><b><i>january</i></b></td>
+<td bgcolor="pink" width="50"align="center"><b><i>february</i></b></td>
+<td bgcolor="pink" width="50" align="center"><b><i>march</i></b></td>
+<td bgcolor="pink" width="50" align="center"><b><i>april</i></b></td>
+<td bgcolor="pink" width="50" align="center"><b><i>may</i></b></td>
+<td bgcolor="pink" width="50" align="center"><b><i>june</i></b></td>
+</tr>
+</tr>
+
+<tr align="center">
+<td bgcolor="yellow" style="color:maroon"><b>Logitech mouse</b></td>
+<td style="color:red">1500</td>	
+<td style="color:red">2113</td>	
+<td style="color:red">2534</td>	
+<td></td>	
+<td style="color:red">1500</td>	
+<td style="color:red">2113</td>	
+
+
+<tr align="center">
+<td bgcolor="yellow" style="color:maroon"><b>Microsoft mouse</b></td>
+<td style="color:red">1987</td>	
+<td style="color:red">2182</td>	
+<td style="color:red">1996</td>	
+<td></td>	
+<td style="color:red">2987</td>	
+<td style="color:red">2182</td>
+
+</tr>
+
+<tr align="center">
+<td bgcolor="yellow" style="color:maroon"><b>LG mouse</b></td>
+<td style="color:red">1345</td>	
+<td style="color:red">809</td>	
+<td style="color:red">889</td>	
+<td></td>	
+<td style="color:red">1345</td>	
+<td style="color:red">809</td>
+
+</tr>
+
+<tr align="center">
+<td bgcolor="yellow" style="color:maroon"><b>Panasonic mouse</b></td>
+<td></td>	
+<td></td>	
+<td></td>	
+<td style="color:red">809</td>	
+<td></td>	
+<td></td>
+
+</tr>
+</table>
+<br><br>
+
+<img src="calci.jpg" width="100" height="100" alt="calculator"/>
+<br><br>
+</center>
+
+BSE listed company <input type="checkbox">
+</body>
+</html>
+
+

@@ -1,0 +1,16 @@
+
+b{
+	font-face:TimesNewRoman;
+	font-size:40;
+	color:maroon;
+	border:3px;
+	border-style:dashed;
+	background-color:cyan;
+b[1]{font-size:20;}
+}
+
+i{
+	color:blue;
+	background-color:yellow;
+}
+input {background-color:silver}

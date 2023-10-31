@@ -1,0 +1,22 @@
+<style>
+</style>
+<center><b>Employee details</b><br><br>
+<form>
+	First Name * <input type="text" placeholder="Your name" required/><br><br>
+	Last Name<input type="text" placeholder="Your Last Name" required/><br><br>
+	Address<br><textarea rows=3 cols=50 placeholder="address" required/> 
+	</textarea><br><br>
+	Gender: Male<input type="radio" name="gender"/>
+	Female<input type="radio" name="gender"/><br><br>
+	<b>hobbies</b><br><br>
+	Music<input type="checkbox"/><br><br>
+	Cricket<input type="checkbox"/><br><br>
+	Computer<input type="checkbox"/><br><br>
+	Date of Joining<input type="date"/><br><br>
+	Time of entry<input type="time"/><br><br>
+	Email<input type="email"/><br><br>
+	Distance from home (in KM)<input type="number" min="10" max="50"/><br><br>
+	Travelling  frequency<input type="range" min="1" max="10000"/><br><br> 
+	<br>Upload your Resume<input type="file"/><br><br>
+	<br><input type="submit" value="save"/><br>
+	<br><input type="reset" value="reset"/><br>

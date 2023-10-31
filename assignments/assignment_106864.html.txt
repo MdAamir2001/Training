@@ -1,0 +1,85 @@
+html>
+    <head>
+        <title>Data Entry Form</title>
+        <body>
+            <script type="text/javascript">
+                function validate()
+                {
+                    var firstName=document.getElementById("first").value.indexOf("/[`!@#$%^&*()_+\-=\[\]{};':\\|,.<>\/?~]/");
+                    var lastName=document.getElementById("last").value.indexOf("/[`!@#$%^&*()_+\-=\[\]{};':\\|,.<>\/?~]/");
+                    var postalCode=document.getElementById("postal").value;
+                    var user=document.getElementById("user1").value;
+                    var Password=document.getElementById("pass").value;
+                    var password1=document.getElementById("pass1").value;
+                    submitOK=true
+
+                    if (firstName.match(/[^a-zA-Z ]/)) {
+                        window.alert("The first name must contain only alphabets");
+                        document.getElementById("first").focus();
+                        submitOK = false;
+                    }
+
+                    if (lastName.match(/[^a-zA-Z ]/)) {
+                        window.alert("The last name must contain only alphabets");
+                        document.getElementById("last").focus();
+                        submitOK = false;    
+                    }
+                    if (isNaN(postalCode) || postalCode.length < 6) {
+                        window.alert("The postal code must be a number of 6 digits");
+                        document.getElementById("postal").focus();
+                        submitOK = false;
+                    }
+                    if (userID.length < 6) {
+                        window.alert("The user ID must be a minimum of 6 characters");
+                        document.getElementById("user1").focus();
+                        submitOK = false;
+                    }
+                    if (userID.charAt(0).match(/[^a-zA-Z]/)) {
+                        window.alert("The user ID must start with an alphabet");
+                        document.getElementById("userID").focus();
+                        submitOK = false;
+                    }
+                    if (password.length < 8) {
+                        window.alert("The password must be a minimum of 8 characters");
+                        document.getElementById("password").focus();
+                        submitOK = false;
+                    }
+                    if (password.match(/[^a-zA-Z0-9]/)) {
+                     window.alert("The password must contain only alphabets and numbers");
+                    document.getElementById("password").focus();
+                    submitOK = false;
+                    }
+                    if (password != retypePassword) {
+                        window.alert("The passwords do not match");
+                        document.getElementById("password").focus();
+                        submitOK = false;           
+                     }
+                    if (submitOK) {
+                        window.open("http://www.ndparking.com");
+                        return true;
+                    }
+                    if (!submitOK)
+                        {
+                        return false
+                        }
+                }
+                </script>
+            <h1 style="font-size: 30; color: red">Tell us about yourself</h1>
+            <p style="font-size: 20; color: blue"><b>your name</b></p>
+            <form id="MyForm" name="Validation" action="javascript:alert('All Ok')" onsubmit="return validate()">
+                <i style="color: darkmagenta;"><b>First name:</b> </i><br><input type="text" id="first"  required/><br><br>
+                <i style="color: darkmagenta;"><b>Last name:</b> </i><br><input type="text" id="last"   required/>
+            <p style="font-size: 20; color: blue"><b>postal code</b></p>   
+            <input type="text" id="postal" maxlength="6"/><br>
+            <h2 style="color: red">Select ID and Password</h2>
+            <p style="font-size: 20; color: blue"><b>User id</b></p>  
+            <input type="text" id="user1" required/>
+            <p style="font-size: 20; color: blue"><b>Password</b></p>
+            <input type="text" id="pass" required/>
+            <p style="font-size: 20; color: blue"><b>Re - type Password</b></p>
+            <input type="text" id="pass1" required/><br><br>
+            <input type="button" value="submit"   onsubmit="validate()"/>&nbsp; &nbsp; &nbsp;<input type="button" value="clear"  />
+            </form>
+        </body>
+    </head>
+</html>

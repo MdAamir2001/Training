@@ -1,0 +1,28 @@
+<div class="center-container">
+    <p class="animated-text">Kindly Sign up the fields to proceed further...</p>
+    <body>
+    
+    
+    <form [formGroup]="orderdetails" (ngSubmit)="onSubmit()">
+    
+      <label for="name">Pizza</label>
+    
+      <input id="pizza" type="text" formControlName="pizza" required><br>
+      <label for="burger">Burger</label>
+    
+      <input id="burger" type="text" formControlName="burger" required><br>
+      <label for="desserts">Desserts</label>
+    
+      <input id="desserts" type="text" formControlName="desserts" required><br>
+      <label for="mojitos">Mojitos</label>
+    
+      <input id="mojitos" type="text" formControlName="mojitos" required><br>
+      <button type="submit" value="submit"
+          [disabled]="!orderdetails.valid">Submit</button>
+    
+    </form>
+    
+    
+    
+    </body>
+    </div>

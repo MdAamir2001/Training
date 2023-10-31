@@ -1,0 +1,7 @@
+<p>menu works!</p>
+
+<div *ngFor="let item of menuItems">
+  <h3>{{ item.name }}</h3>
+  <p>Price: {{ item.price }}</p>
+  <button (click)="addToCart(cartItems)">Add to Cart</button>
+</div>

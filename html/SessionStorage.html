@@ -1,0 +1,35 @@
+<html>
+<head>
+<Title>ISBN NUMBER</title>
+<center>
+<h2><u>ISBN Book Information</u></h2>
+<body bgcolor="cyan">
+<script>
+	function saveData()
+	{
+		var i=document.forms[0].isbn.value;
+		var t=document.forms[0].booktitle.value;
+		console.log(i);
+		console.log(t);
+		sessionStorage.isbn=i;
+		sessionStorage.title=t;
+	}
+	function getData()
+	{
+		para=document.getElementsByName("data");
+		para[0].innerHTML =sessionStorage.isbn;
+		para[1].innerHTML =sessionStorage.title;	
+	}
+</script>
+
+<form>
+ISBN No: <input type="text" placeholder="ISBN Value" name="isbn" required /><br><br>
+Title : <input type="text" placeholder="Enter title of the book" name="booktitle" required /><br><br>
+<input type="button" value="submit" onclick="saveData()"/>
+<input type="button" value="get" onclick="getData()"/>
+<input type="submit" value="reset"/><br><br>
+<p name="data">Book data</p><br>
+<p name="data">All Books in the Library</p><br>
+</form>
+</body></head></html>
+

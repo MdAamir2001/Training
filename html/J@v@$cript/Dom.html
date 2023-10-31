@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Dom Manipulation</title>
+    </head>
+    <body>
+        <script>
+            function enableDisable(){
+                v=document.forms[0].status.checked;
+                var b=document.getElementById("submit1")
+                if(v==true){
+                    b.disabled=false;
+                }
+                else
+                    b.disabled=true;
+            }
+            function ShowName(){
+                btag= document.createElement("b");
+                btag.innerHTML=document.forms[0].Firstname.value;
+                document.appendChild(btag);
+            }
+        </script>
+        <form>
+            Name: <input type="Text" name="Firstname" required/><br>
+            Agree to terms and conditions<input type="checkbox" name="status"  onchange="enableDisable()"/><br>
+            <input type="button" value="save" id="submit1" onclick="ShowName()" disabled/>
+        </form>
+    <body>

@@ -1,0 +1,43 @@
+<div>
+  <center>
+    <form (submit)="handleSubmit($event)">
+      First Name:
+      <input type="text" placeholder="Enter your first name" name="firstName" [(ngModel)]="formData.firstName" required />
+      <span class="error">{{ formErrors.firstName }}</span> <br /><br />
+      Last Name:
+      <input type="text" placeholder="Enter your last name" name="lastName" [(ngModel)]="formData.lastName" required /> <span class="error">{{ formErrors.lastName }}</span>
+      <br /><br />
+      Email: <input type="text" placeholder="Enter your email" name="email" [(ngModel)]="formData.email" required /> <span class="error">{{ formErrors.email }}</span>
+      <br /><br />
+      Phone:
+      <input type="text" placeholder="Enter your phone number" name="phone" [(ngModel)]="formData.phone" required /> <span class="error">{{ formErrors.phone }}</span>
+      <br /><br />
+      <input type="submit" value="Submit" />
+      <input type="button" value="Reset" (click)="handleReset()" />
+    </form>
+    <table style="border: 8px solid cyan; width: 100; height: 200; border-collapse: collapse; color: blue;">
+      <thead>
+        <tr>
+          <th style="border: 1px solid black;">First Name</th>
+          <th style="border: 1px solid black;">Last Name</th>
+          <th style="border: 1px solid black;">Email</th>
+          <th style="border: 1px solid black;">Phone</th>
+          <th style="border: 1px solid black;">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let customer of customerDetails; let i = index">
+          <td style="border: 1px solid black;">{{ customer.firstName }}</td>
+          <td style="border: 1px solid black;">{{ customer.lastName }}</td>
+          <td style="border: 1px solid black;">{{ customer.email }}</td>
+          <td style="border: 1px solid black;">{{ customer.phone }}</td>
+          <td style="border: 1px solid black;">
+            <button (click)="deleteContact(i)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,36 @@
+class Account{
+	int accNo;
+	String name;
+	double balance;
+	public void deposit(double amt){
+		balance+=amt;
+	}
+	public void withdraw(double amt){
+		balance-=amt;
+	}
+	public void printBalance(){
+		System.out.println("balance is:"+balance);
+	}
+}
+class SavingsAccount extends Account{
+	public void deposit(double amt){
+		if(amt>50000){
+			System.out.println("Cannot deposit");
+		}
+		else{
+			super.deposit(amt);
+		}
+	}
+}
+
+public class InheritDemo{
+	public static void main(String ar[]){
+		SavingsAccount myAcc=new SavingsAccount();
+		myAcc.deposit(9000);
+		myAcc.printBalance();
+		myAcc.deposit(6000);
+		myAcc.printBalance();
+		myAcc.deposit(54000);
+		myAcc.printBalance();
+}
+}

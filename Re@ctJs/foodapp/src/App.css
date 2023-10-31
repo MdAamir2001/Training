@@ -1,0 +1,50 @@
+.App {
+ 
+  font-family: Arial, sans-serif;
+  text-align: center;
+
+}
+
+body {
+
+  background-image: url('C:\Users\aamir.md\Desktop\Re@ctJs\foodapp\src\components\foodie.png'); /* Replace with your image path */
+
+  background-size: 1350px 700px; /* Adjust the width and height to your desired dimensions */
+
+  background-repeat: no-repeat;
+
+}
+
+ 
+
+/* Style for the button container */
+.displayflex {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+
+ 
+
+/* Style for the buttons */
+.button1 {
+  background-color: #b5ece7; /* Blue background color */
+  color: #cd1111f7; /* White text color */
+  border: none;
+  padding: 20px 40px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 30;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+ 
+
+/* Style for the buttons on hover */
+.button1:hover {
+  background-color: #0056b3; /* Darker blue background color on hover */
+}

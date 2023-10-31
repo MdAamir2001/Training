@@ -1,0 +1,25 @@
+First Name: {{emp.firstName}}<br>
+Last Name: {{emp.lastName}}<br>
+Age: {{emp.age}}<br>
+Your Employee If: <input type="number" [(ngModel)]="emp.empId"/><br>
+Your First name: <input type="text" [(ngModel)]="emp.firstName"/><br>
+
+Your Last name: <input type="text" [(ngModel)]="emp.lastName"/><br>
+
+Your Age: <input type="text" [(ngModel)]="emp.age"/><br>
+<!-- <input type="button" value="Add data" (click)="emplist.push(emp)" /> -->
+<input type="button" value="Add data" (click)="addEmp()"/>
+
+
+<table style="border: 8px; border-style: dashed;border-color: blue; background-color: silver;text-shadow: 4px;">
+  <tr style="background-color: rgb(235, 125, 180);"><td><b>First Name</b></td>
+  <td><b>Last Name</b></td>
+  <td><b>Age</b></td>
+  <tr *ngFor="let i of emplist">
+    <td>{{i.firstName}}</td>
+    <td>{{i.lastName}}</td>
+    <td>{{i.age}}</td>
+  </tr>
+</table>
+<input type="button" value="forloops" (click)="forLoops()"/>
+<router-outlet></router-outlet>

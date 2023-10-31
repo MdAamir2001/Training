@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <p>Creating two bike objects from a Bike Class:</p>
+
+    <p id="demo"></p>
+
+    <script>
+
+        class Bike {
+
+            name="RE";
+
+            year= "2010";
+
+            setName(bikeName){
+                this.name=bikeName;
+            }
+            setYear(mfgYear){
+                this.year=mfgYear;
+            }
+
+            getYear(){
+                return this.year;
+            }
+            getName(){
+                return this.name;
+            }
+
+ 
+
+        }
+
+ 
+
+        const b1 =new Bike();
+
+        // b1.name="Triumph"; b1.year="2020";
+        b1.setName("Master of Torque-15");
+        b1.setYear("2023");
+        document.getElementById("demo").innerHTML= 
+        b1.getName() + " " + b1.getYear();
+
+ 
+
+    </script>
+
+</body>
+
+</html>

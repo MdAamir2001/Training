@@ -1,0 +1,36 @@
+<html>
+<head>
+<script>
+function validate() {
+  var x = document.getElementById("fname").value
+  var y = document.getElementById("age").value
+  var z = document.getElementById("mail").value.indexOf()
+  if (x =="")
+   {
+    alert("Name must be filled out");
+    return false;
+   }
+   
+  if(y<18 || y>65)
+	{
+	alert("Age should be between 18 to 65");
+	return false;
+    }
+
+}
+</script>
+</head>
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<form name="myForm"  onsubmit="return validate()" >
+  Name: <input type="text" id="fname">
+  age: <input type="text" id="age">
+  mail: <input type="text" id="mail">
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+

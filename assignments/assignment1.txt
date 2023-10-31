@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Data Entry Form</title>
+        <body>
+            <script type="text/javascript">
+                function validate()
+                {
+                    var fi=document.getElementById("first").value.indexOf("@")
+                    var la=document.getElementById("last").value;
+                    var post=document.getElementById("postal").value;
+                    var user=document.getElementById("user1").value;
+                    var p=document.getElementById("pass").value;
+                    var p1=document.getElementById("pass1").value;
+                    submitOK=true
+
+                    if (fi==-1){
+                        alert("The name must not contain special characters")
+                        document.getElementById ("fi").focus ()
+                        submitOK=false
+                    }
+                    if(la==-1){
+                        alert("The name must not contain special characters")
+                        document.getElementById ("la").focus ()
+                        submitOK=false
+                    }
+                    
+                    
+                       
+                      
+
+                    if (!submitOK)
+                        {
+                        return false
+                        }
+
+                }
+                </script>
+            <h1 style="font-size: 30; color: red">Tell us about yourself</h1>
+            <p style="font-size: 20; color: blue"><b>your name</b></p>
+            <form action="javascript:alert('All Ok')" onsubmit="return validate()">
+                <i style="color: darkmagenta;"><b>First name:</b> </i><br><input type="text" id="first"  maxlength="25"/><br><br>
+                <i style="color: darkmagenta;"><b>Last name:</b> </i><br><input type="text" id="last"  maxlength="25" required/>
+            <p style="font-size: 20; color: blue"><b>postal code</b></p>   
+            <input type="text" id="postal" required/><br>
+            <h2 style="color: red">Select ID and Password</h2>
+            <p style="font-size: 20; color: blue"><b>User id</b></p>  
+            <input type="text" id="user1" required/>
+            <p style="font-size: 20; color: blue"><b>Password</b></p>
+            <input type="text" id="pass" required/>
+            <p style="font-size: 20; color: blue"><b>Re - type Password</b></p>
+            <input type="text" id="pass1" required/><br><br>
+            <input type="button" value="submit" />&nbsp; &nbsp; &nbsp;<input type="button" value="clear"  />
+            </form>
+        </body>
+    </head>
+</html>

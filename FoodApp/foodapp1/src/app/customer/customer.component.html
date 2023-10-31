@@ -1,0 +1,25 @@
+<div class="center-container">
+<p class="animated-text">Kindly Sign up the fields to proceed further...</p>
+<body>
+
+
+<form [formGroup]="customerform" (ngSubmit)="onSubmit()">
+
+  <label for="name">Name</label>
+
+  <input id="name" type="text" formControlName="name" required><br>
+  <label for="phone">Phone number</label>
+
+  <input id="phone" type="text" formControlName="phone" required><br>
+  <label for="email">Email</label>
+
+  <input id="email" type="email" formControlName="email" required><br>
+  <button type="submit" value="submit"
+      [disabled]="!customerform.valid">Submit</button>
+
+</form>
+
+
+
+</body>
+</div>

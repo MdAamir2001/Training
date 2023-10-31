@@ -1,0 +1,2 @@
+homepage - welcome;
+login link, on click link go to login(form)  page once authenticate show product list page  click on product (button) (static) display a page showing product bought by a username who logged in. Total 4 page.
